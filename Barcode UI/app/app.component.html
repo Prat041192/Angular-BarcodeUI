@@ -1,0 +1,22 @@
+
+<body style="background-color:hsla(9, 100%, 64%, 0.2);">
+<h3 style="font-family:verdana; font-size:300%;">Available Barcodes </h3>
+
+<ul class="list-group" >
+    <li *ngFor="let cust of customers" class="list-group-item list-group-item-info"[class.selected]="cust === selectedCustomer" (click)="onSelect(cust)" >
+    <span style="font-family:verdana;">
+    <h2>  {{cust.id}}</h2></span>
+    <span style="color:black" >
+    <div> <label>Barcode Id: </label>{{cust.id}}</div>
+    <div>  <label>Barcode Text: </label> {{cust.barcodeText}}</div>
+    <div><label>Barcode Type: </label>{{cust.barcodeType}}</div>
+    <div><label>Barcode Created At: </label>{{ cust.createdAt}}</div> </span>
+    <button type="button" (click)="deleteCustomer(cust.id)" onclick="alert('Clicking on Ok will delete the barcode')">Delete</button>
+
+
+	</li>
+<customer-detail [customer]="selectedCustomer"></customer-detail>
+</ul>
+
+
+</body>

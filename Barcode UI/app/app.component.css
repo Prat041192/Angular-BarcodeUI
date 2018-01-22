@@ -1,0 +1,28 @@
+
+p    {
+  color: red;
+}
+span{
+
+  padding: 5px;
+}
+div {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+h2 {
+background: linear-gradient(to right, #cbad6d 10%, #ffcccc 119%);
+color: black;
+    border: 3px ;
+    text-align: left;
+    padding: 5px;
+
+}
+h3 {
+
+ background: linear-gradient(to top, #cbad6d 10%, #ffcccc 119%);
+    text-align: center;
+      padding: 10px;
+}
